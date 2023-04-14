@@ -1,0 +1,42 @@
+<head bgcolor=#dddddd>
+
+  <title>Formulario de Bicileta</title>
+
+  </head>
+
+  <body bgcolor=#dddddd >
+
+  <h1>Formulario de Bicileta</h1>
+
+  <form>
+
+  <label for="marca" >marca: </label>
+  <input type="marca" id="marca" name="marca" [(ngModel)]="bicicleta.marca" required>
+  <br>
+
+  <label for="color" >color:  </label>
+  <input id="color" id="color" name="color" [(ngModel)]="bicicleta.color"><br>
+
+  <label for="piñones" >pinones: </label>
+  <input type="piñones" id="piñones" [(ngModel)]="bicicleta.pinones" name="piñones"><br>
+
+  <label for="platos" >platos: </label>
+  <input type="platos" id="platos" [(ngModel)]="bicicleta.platos" name="platos"><br>
+
+  <label for="velocidad" >velocidad: </label>
+  <input type="number" id="velocidad" [(ngModel)]="bicicleta.velocidad" name="velocidad"><br>
+
+  <label for="aceleración" >aceleración: </label>
+  <input type="number" id="aceleración" [(ngModel)]="bicicleta.aceleracion" name="aceleración"><br>
+
+  <label for="deceleración" >deceleración: </label>
+  <input type="number" id="deceleración" [(ngModel)]="bicicleta.deceleracion" name="deceleración"><br>
+
+  <input type="checkbox" id="electrica" name="electrica" required [(ngModel)]="bicicleta.electrica">
+  <label for="electrica" >electrica</label><br><br>
+
+  <input type="submit" value="Enviar" (click)="imprimir()">
+  <br>
+  <p>RESULTADO: </p><p>{{texto}}</p><br>
+  </form>
+</body>
